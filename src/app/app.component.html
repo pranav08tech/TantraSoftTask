@@ -1,0 +1,8 @@
+<div>
+  <input type="text" #str>
+  <button (click)="onSubmit(str.value)">Add</button>
+<br><br>
+  <select name="strdropd" id="strdropd" >
+    <option *ngFor="let data of filArray" value="data">{{data}}</option>
+  </select>
+</div>
